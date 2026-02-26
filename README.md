@@ -1,22 +1,31 @@
-# Detector de coisas com IA!
+# Detector de coisas com IA (YOLOv8)
 
-Essa aplicação detecta coisas na sua tela (overlay) utilizando IA (Yolo V8)
-É recomendado ter um PC decente, com uma placa de vídeo para o melhor funcionamento.
-É necessário Python 3.10.5.
+Essa aplicação detecta coisas na sua tela (overlay) utilizando IA (Yolo V8) É recomendado ter um PC decente, com uma placa de vídeo para o melhor funcionamento. É necessário Python 3.10.5.
 
-## Instale os pips necessários:
+## Requisitos
+
+- Windows
+- Python 3.10.5 (ou superior)
+
+## Instalação dos reqs:
+
+1. Execute o arquivo `install.bat` (duplo clique ou terminal).
+2. O script instala automaticamente tudo do `requirements.txt`.
+
+Opcional (manual):
 
 ```bash
-pip install -r requirements.txt
+python -m pip install -r requirements.txt
 ```
 
-## Modelo padrão YoloV8
-Treinado com coisas simples, como veículos, animais, pessoas, etc.
+## Como executar
 
-Na interface, ela mostrará todas as classes. `Pessoa`, `Animais` e `Veiculos`.
-
-## Como rodar
+Depois de instalar os requisitos:
 
 ```bash
-Execute o arquivo "main.py"
-``` 
+python main.py
+```
+
+## Modelo
+
+O projeto usa o modelo `yolov8n.pt` e inclui presets de classes como `Pessoas`, `Animais` e `Veiculos`.
