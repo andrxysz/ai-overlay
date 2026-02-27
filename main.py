@@ -90,7 +90,7 @@ class DetectorThread(QThread):
                             verbose=False,
                         )[0]
                     except Exception as exc:
-                        self.runtime_error.emit(f"Falha em interferências do yolo: {exc}")
+                        self.runtime_error.emit(f"Falha em inferências do yolo: {exc}")
                         break
 
                     boxes = []
@@ -255,7 +255,7 @@ class ControlPanel(QWidget):
         controls.addWidget(stop_btn)
         root.addLayout(controls)
 
-        info = QLabel("Ao pressionar iniciar, a deteccao inicia automaticamente.")
+        info = QLabel("Ao pressionar iniciar, a detecção inicia automaticamente.")
         info.setWordWrap(True)
         root.addWidget(info)
 
